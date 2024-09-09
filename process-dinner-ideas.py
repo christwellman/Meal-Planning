@@ -3,6 +3,8 @@ This script preprocesses recipe ideas from a text file by removing irrelevant in
 tokenizing, removing stopwords, and applying stemming and lemmatization. It then trains
 a Word2Vec model on the preprocessed data to generate word embeddings. Finally, it ranks
 similar recipe ideas based on cosine similarity and writes the results to an output file.
+
+"recipes" herein are acutally a single dinner idea
 """
 
 import csv
