@@ -14,36 +14,39 @@ hidden: false
 <!-- AUTO-DISCOVERED:START (regenerated each refresh; put corrections in the frontmatter above) -->
 # Meal-Planning
 
-**Repo:** https://github.com/christwellman/Meal-Planning  ·  **Path:** `/Users/christwellman/Projects/Meal-Planning`  ·  **Stack:** Python · NLTK · Word2Vec (gensim) · Tkinter
+**Repo:** https://github.com/christwellman/Meal-Planning  ·  **Path:** `/Users/christwellman/Projects/Meal-Planning`  ·  **Stack:** Python · NLTK · gensim Word2Vec · Tkinter (spaCy in recipe script)
 
-**Purpose:** Dinner-ideas processor that cleans a list of dinner ideas, trains Word2Vec and flags similar/duplicate ideas via cosine similarity (Tkinter GUI + CLI). README aims for a recipe-standardizing RAG project for LLM meal planning, not implemented. _(confidence: high)_
+**Purpose:** Dinner Ideas Processor: cleans a list of family dinner ideas, trains Word2Vec and flags similar or duplicate ideas by cosine similarity (Tkinter GUI plus CLI). README states a broader goal of a recipe-standardizing RAG project for LLM meal planning, which is not implemented. _(confidence: high)_
 
-**Status:** stalled _(confidence: high)_ — evidence: Last commit 2024-09-09; last file change 2025-04-12; over 18 months idle
+**Status:** stalled _(confidence: medium)_ — evidence: Last substantive work was a one-off burst on 2026-10-18 (commits adding dinner ideas, processor, spec, PROJECT.md), but those were commits of long-existing local files (file mtimes 2025-04-12) rather than new development. No new development in months, and the RAG goal is untouched.
 
-**Last meaningful activity:** 2025-04-12 — Uncommitted local edits to Dinner_Ideas.py and family_dinner_ideas.txt after the last commit (initial code and recipes, 2024-09-09)
+**Last meaningful activity:** 2026-10-18 — Committed Dinner Ideas Processor, more family dinner ideas and functional spec (locally, not pushed); earlier real development was 2024-09-09
 
-**Local state:** branch `main`, 3 uncommitted, 0 unpushed, 0 behind
+**Local state:** branch `main`, 0 uncommitted, 4 unpushed, 0 behind
 
 ## Recent updates
-- Only 5 commits, all on 2024-09-09 (initial code, recipes, docs, tweaks)
-- Dinner_Ideas.py (main script) and the functional spec doc were never committed
-- family_dinner_ideas.txt modified locally since last commit (Apr 2025)
+- 2026-10-18: added PROJECT.md project summary (dff7d76)
+- 2026-10-18: added functional specification for Dinner Ideas Processor
+- 2026-10-18: added Dinner Ideas Processor (Word2Vec similarity suggestions)
+- 2026-10-18: added more family dinner ideas and tweaked entries
+- 2024-09-09: initial recipes, function docs and tweaks
 
 ## Outstanding work
-- [uncommitted] Dinner_Ideas.py is untracked (main script not in git) (Dinner_Ideas.py)
-- [uncommitted] Modified family_dinner_ideas.txt (family_dinner_ideas.txt)
-- [uncommitted] Untracked functional spec and PROJECT.md (Functional Specification Document: Dinner.md)
-- [roadmap] LLM/RAG integration described in README not implemented; build it or trim the README (README.md)
+- [branch] 4 local commits on main not pushed to origin (includes Dinner_Ideas.py, the main script) (main (ahead 4))
+- [roadmap] LLM/RAG integration described in README is not implemented; build it or trim the README (README.md)
+- [other] process-recipes.py looks unfinished: NER trained on 2 toy examples, and it reads 'Recipes/' while the folder is 'recipes/' (fails on case-sensitive filesystems) (process-recipes.py:88)
 - [other] Only 3 sample recipes; recipe standardization is minimal (recipes/)
+- [other] Stale remote branch origin/master alongside origin/main (origin/master)
 
 ## Suggested next step
-Commit Dinner_Ideas.py, the spec and the family_dinner_ideas.txt changes (or discard) so the main script is in git; then decide whether to build the RAG piece or scale back the README. _(confidence: high)_
+Push main to origin so Dinner_Ideas.py and the spec are backed up on GitHub, then decide whether to build the RAG piece or trim the README. _(confidence: high)_
 
 ## Findings
-- Main script Dinner_Ideas.py exists only locally and is untracked, so it is not backed up on GitHub
-- No secrets found
+- Main script Dinner_Ideas.py, the spec and new dinner ideas exist only in 4 unpushed local commits, so they are not backed up on GitHub until pushed.
+- Bash was unavailable, so git log and branch output were derived from .git/logs/HEAD and packed-refs, and Dinner_Ideas.py was not read.
+- No secrets found in the files read.
 
-_Analyzed 2026-10-18._
+_Analyzed 2026-10-19._
 <!-- AUTO-DISCOVERED:END -->
 
 ## Previous notes (preserved verbatim from the earlier audit — edit freely)

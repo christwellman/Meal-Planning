@@ -85,7 +85,7 @@ def preprocess_recipes_directory(directory, ner_model):
     return preprocessed_recipes
 
 # Specify the directory containing the recipe text files
-recipes_directory = 'Recipes/'
+recipes_directory = 'recipes/'
 
 # Prepare the labeled data for training the NER model
 labeled_data = [
